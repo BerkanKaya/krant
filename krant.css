@@ -4,14 +4,46 @@ body{
 }
 .grid-container{
 	display: grid;
-	grid-column: 1/4;
 	margin: 0 auto;
-	width: 1000px;
-	grid-gap: 10px;
-	grid-template-rows: 140px 140px 140px;
+	width: 1027px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: minmax(100px, auto);
+	grid-template-areas:"header header header header"
+						"banner banner banner banner"
+						"commando commando max gratis"
+						"alarm zon nieuws gratis";
+	}
+#menu{
+	grid-area: header;
+}	
+
+#reclame{
+	grid-area: banner;
+}	
+#commando{
+	grid-area: commando;
+}	
+
+#max{
+	grid-area: max;
+}			
+#binnen{
+	grid-area: gratis;
 }
 
-.aside{
-
-	grid-column: 3/4;
+#griepvaccin{
+	grid-area: alarm;
 }
+
+#zonovergoten{
+	grid-area: zon;
+}
+
+#schandaal{
+	grid-area: nieuws;
+}
+
+
+
+
+
