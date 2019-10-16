@@ -2,7 +2,16 @@ body{
 	margin: 0 auto;
 
 }
-.container{
+.grid-container{
+	display: grid;
+	grid-column: 1/4;
 	margin: 0 auto;
 	width: 1000px;
+	grid-gap: 10px;
+	grid-template-rows: 140px 140px 140px;
+}
+
+.aside{
+
+	grid-column: 3/4;
 }
